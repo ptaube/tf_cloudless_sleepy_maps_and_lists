@@ -15,7 +15,7 @@ variable "MapElement" {
 }
 
 variable "ListElement" {
-  default = [ "e1", "e1" ]
+  default = [ "e\"1", "e1" ]
 }
 
 # now with embedded double quote
@@ -31,4 +31,3 @@ v22
 EOF
 ]
 }
-
