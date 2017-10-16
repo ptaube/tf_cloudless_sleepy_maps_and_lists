@@ -9,3 +9,11 @@ output "map_output" {
 output "list_output" {
     value = "${var.ListElement}"
 }
+
+output "map_output_element" {
+    value = "${var.MapElement["k1"]}"
+}
+
+output "list_output_element" {
+    value = "${var.ListElement[0]}"
+}
