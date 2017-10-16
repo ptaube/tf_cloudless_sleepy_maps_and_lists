@@ -11,9 +11,24 @@ variable "sleepy_time" {
 }
 
 variable "MapElement" {
-  default     = { k1  = "v1" , k2 = "k2" }
+  default     = { k1 = "v\"1" , k2 = "k2" }
 }
 
 variable "ListElement" {
   default = [ "e1", "e1" ]
 }
+
+# now with embedded double quote
+variable "double_quote" {
+  default     = [ <<EOF
+v11
+v12
+EOF
+,
+<<EOF
+v21
+v22
+EOF
+]
+}
+
