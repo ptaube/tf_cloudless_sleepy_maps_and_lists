@@ -18,30 +18,28 @@ output "list_output_2" {
     value = "${var.ListElement_2}"
 }
 
-output "map_output_element_1" {
-    value = "${var.MapElement_1["k1"]}"
-}
-
-output "map_output_element_2" {
-    value = "${var.MapElement_2["k1"]}"
-}
-
-output "list_output_element_1" {
-    value = "${var.ListElement_1[0]}"
-}
-
-output "list_output_element_2" {
-    value = "${var.ListElement_2[0]}"
-}
-
 output "string_output_1" {
-  value = "${String_1}"
+  value = "${var.String_1}"
 }
 
 output "string_output_2" {
-  value = "${String_2}"
+  value = "${var.String_2}"
 }
 
 output "multiline_output_list" {
-  value = "${multiline_list}"
+  value = "${var.multiline_list}"
 }
+
+output "o_simple_default_only_with_quote" {
+  value = "${var.simple_default_only_with_quote}"
+}
+
+output "o_simple_map_with_quote" {
+  value = "${var.simple_map_with_quote}"
+}
+
+output "o_simple_list_with_quote" {
+  value = "${var.simple_list_with_quote}"
+}
+
+

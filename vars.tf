@@ -50,3 +50,17 @@ v22
 EOF
 ]
 }
+
+variable "simple_default_only_with_quote" {
+  default     = "Default of simple_default_only_with_quote ->\" and \tTAB"
+}
+
+variable "simple_map_with_quote" {
+  default     = { k = "Default of simple_map_with_quote ->\" and \tTAB" }
+}
+
+variable "simple_list_with_quote" {
+  default     = [ "Default of simple_list_with_quote ->\" and \tTAB" ]
+}
+
+
