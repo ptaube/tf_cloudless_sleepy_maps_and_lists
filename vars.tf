@@ -12,17 +12,16 @@ variable "sleepy_time" {
 
 variable "MapElement" {
   default     = {
-    #    k1 = "v\"1" , k2 = "v2"
-         k1 = "v1" , k2 = "v2"
+        k1 = "v\"1" , k2 = "v2"
+    #     k1 = "v1" , k2 = "v2"
   }
 }
 
 variable "ListElement" {
-  # default = [ "l\"1", "el" ]
-  default = [ "l1", "l1" ]
+   default = [ "l\"1", "el" ]
+  # default = [ "l1", "l1" ]
 }
 
-/*
 variable "multiline_list" {
   default     = [ <<EOF
 v11
@@ -35,4 +34,3 @@ v22
 EOF
 ]
 }
-*/
