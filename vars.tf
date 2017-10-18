@@ -2,7 +2,7 @@
 
 variable "sample_var" {
   description = "A sample_var to pass to the template."
-  default     = "Samplevar"
+  default     = "Samplevar \" with double quotes and \t TAB"
 }
 
 variable "sleepy_time" {
@@ -11,15 +11,19 @@ variable "sleepy_time" {
 }
 
 variable "MapElement" {
-  default     = { k1 = "v\"1" , k2 = "k2" }
+  default     = {
+    #    k1 = "v\"1" , k2 = "v2"
+         k1 = "v1" , k2 = "v2"
+  }
 }
 
 variable "ListElement" {
-  default = [ "e\"1", "e1" ]
+  # default = [ "l\"1", "el" ]
+  default = [ "l1", "l1" ]
 }
 
-# now with embedded double quote
-variable "double_quote" {
+/*
+variable "multiline_list" {
   default     = [ <<EOF
 v11
 v12
@@ -31,3 +35,4 @@ v22
 EOF
 ]
 }
+*/

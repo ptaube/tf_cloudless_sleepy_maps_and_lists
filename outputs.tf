@@ -17,3 +17,7 @@ output "map_output_element" {
 output "list_output_element" {
     value = "${var.ListElement[0]}"
 }
+
+output "multiline_list" {
+  value = "${multiline_list}"
+}
