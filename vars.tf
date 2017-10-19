@@ -38,6 +38,7 @@ variable "ListElement_2" {
    default = [ "l\"1", "el" ]
 }
 
+/*
 variable "multiline_list" {
   default     = [ <<EOF
 v11
@@ -50,6 +51,7 @@ v22
 EOF
 ]
 }
+*/
 
 variable "simple_default_only_with_quote" {
   default     = "Default of simple_default_only_with_quote ->\" and \tTAB"

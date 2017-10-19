@@ -29,7 +29,7 @@ output "string_output_2" {
 output "double_quote" {
   value = "${var.double_quote}"
 }
-*/
+
 output "multiline_output_list" {
   value = "${var.multiline_list}"
 }
@@ -37,7 +37,7 @@ output "multiline_output_list" {
 output "multiline_output_list_1" {
   value = "'${var.multiline_list[0]}'"
 }
-
+*/
 output "o_simple_default_only_with_quote" {
   value = "${var.simple_default_only_with_quote}"
 }
@@ -49,5 +49,3 @@ output "o_simple_map_with_quote" {
 output "o_simple_list_with_quote" {
   value = "${var.simple_list_with_quote}"
 }
-
-
