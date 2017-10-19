@@ -25,9 +25,17 @@ output "string_output_1" {
 output "string_output_2" {
   value = "${var.String_2}"
 }
-
+/*
+output "double_quote" {
+  value = "${var.double_quote}"
+}
+*/
 output "multiline_output_list" {
   value = "${var.multiline_list}"
+}
+
+output "multiline_output_list_1" {
+  value = "'${var.multiline_list[0]}'"
 }
 
 output "o_simple_default_only_with_quote" {

@@ -63,4 +63,25 @@ variable "simple_list_with_quote" {
   default     = [ "Default of simple_list_with_quote ->\" and \tTAB" ]
 }
 
-
+/*
+# here doc usage in lists and maps
+# now with embedded double quote
+variable "double_quote" {
+  default     = [ <<EOF
+v11\n
+v12
+EOF
+,
+<<EOF
+v21\n
+v22
+EOF
+, "v3", "v4" , "v5",
+{ "k1" = <<EOF
+vk11\n
+vk12
+EOF
+}
+]
+}
+*/
