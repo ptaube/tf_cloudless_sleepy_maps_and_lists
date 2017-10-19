@@ -13,6 +13,14 @@ variable "String_2" {
   default = "Hello world\tTAB and \" double quote"
 }
 
+variable "String_3" {
+  default = <<EOF
+This are
+multiple lines
+in a here doc
+EOF
+}
+
 variable "sleepy_time" {
   description = "How long our local-exec will take a nap."
   default     = 1

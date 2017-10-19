@@ -25,6 +25,10 @@ output "string_output_1" {
 output "string_output_2" {
   value = "${var.String_2}"
 }
+
+output "string_output_3" {
+  value = "${var.String_3}"
+}
 /*
 output "double_quote" {
   value = "${var.double_quote}"
